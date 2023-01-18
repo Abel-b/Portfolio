@@ -485,14 +485,28 @@ h3 {
 .project-preview-container {
   margin-bottom: 25px;
   display: flex;
-  width: "100%";
-  justify-content: space-between;
-}
-.project-preview {
-  background-color: #1d6fa5;
   margin-left: 0px;
   margin-right: 0px;
-  border-radius: 9px;
+  padding: 0;
+  justify-content: space-between;
+}
+.project-title-container {
+  margin-bottom: 10px;
+  padding: 0;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  justify-content: space-between;
+}
+.project-preview-title {
+  background-color: rgba(61, 33, 187, 0.8);
+  margin-left: 0px;
+  margin-right: 0px;
+  color: #fff;
+}
+.project-preview {
+  margin-left: 0px;
+  margin-right: 0px;
 }
 .project-info {
   position: absolute;
@@ -504,12 +518,12 @@ h3 {
 .project-info h3 {
   font-size: 1.5em;
   font-weight: 300;
-  color: #374054;
+  color: #000000;
   margin: 0 0 15px 0;
 }
 .project-info p {
-  color: #74808a;
-  margin: 0 0 15px 0;
+  color: #000000;
+  margin: 0 0 20px 0;
   font-size: 0.9em;
 }
 .no-image .project-info {

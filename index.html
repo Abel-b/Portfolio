@@ -27,7 +27,7 @@
       </div>
       <ul id="menu" class="shadow">
         <li>
-          <a href="#about">About</a>
+          <a href="#about">About me</a>
         </li>
         <li>
           <a href="#education">Education</a>
@@ -48,7 +48,8 @@
     <div id="lead">
       <div id="lead-content">
         <h1>Abel Berhane Woldemariam</h1>
-        <h3>Web / Mobile Developer</h3>
+        <h3></h3>
+        <h3>Software Developer</h3>
       </div>
 
       <div id="lead-overlay"></div>
@@ -330,30 +331,41 @@
     <div id="projects" class="background-alt">
       <h2 class="heading">Projects</h2>
       <div class="container">
+        <div class="row project-title-container">
+          <div class="col-md-4 project-preview-title">
+            <h4>Habesha Pizza</h4>
+          </div>
+          <div class="col-md-4 project-preview-title">
+            <h4>AllShop</h4>
+          </div>
+          <div class="col-md-4 project-preview-title">
+            <h4>Ekub</h4>
+          </div>
+        </div>
         <div class="row project-preview-container">
           <div
             class="col-4 project-preview"
+            id="preview-habeshapizza"
             onmouseover="showProjectName('habesha_pizza')"
             onmouseout="hideProjectName('habesha_pizza')"
           >
-            <h3>Habesha Pizza</h3>
-            <img src="images/Habesha.png" width="100" height="100" />
-          </div>
-          <div
-            class="col-md-4 project-preview"
-            onmouseover="showProjectName('all_shop')"
-            onmouseout="hideProjectName('all_shop')"
-          >
-            <h3>AllShop</h3>
-            <img src="images/allShop.png" width="100" height="100" />
+            <img src="images/Habesha.png" width="250" height="150" />
           </div>
           <div
             class="col-4 project-preview"
+            id="preview-allshop"
+            onmouseover="showProjectName('all_shop')"
+            onmouseout="hideProjectName('all_shop')"
+          >
+            <img src="images/allShop.png" width="250" height="150" />
+          </div>
+          <div
+            class="col-4 project-preview"
+            id="preview-ekub"
             onmouseover="showProjectName('ekub')"
             onmouseout="hideProjectName('ekub')"
           >
-            <h3>Ekub</h3>
-            <img src="images/project.jpg" width="100" height="100" />
+            <img src="images/project.jpg" width="250" height="150" />
           </div>
         </div>
         <div class="row">
@@ -374,9 +386,6 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a>
-              <br />
-              <a href="https://github.com/Abel-b/Habesha-Pizza/">Github code</a>
             </div>
             <!-- End .project-info -->
           </div>
@@ -401,8 +410,6 @@
                 <li>CSS</li>
                 <li>JavaScript</li>
               </ul>
-              <a href="https://abel-b.github.io/Allshop/">Live link</a> <br />
-              <a href="https://github.com/Abel-b/Allshop/">Github code</a>
             </div>
             <!-- End .project-info -->
           </div>
@@ -423,11 +430,29 @@
                 <li>PSQL</li>
                 <li>Java</li>
               </ul>
-              <a href="https://github.com/Abel-b/Ekub">Github Code</a>
             </div>
             <!-- End .project-info -->
           </div>
           <!-- End .project -->
+        </div>
+        <div class="row project-title-footer">
+          <div class="col-md-4 project-preview-footer">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a>
+            <br />
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/Abel-b/Habesha-Pizza/">Github code</a>
+          </div>
+          <div class="col-md-4 project-preview-footer">
+            <i class="fa fa-desktop" aria-hidden="true"></i>
+            <a href="https://abel-b.github.io/Allshop/">Live link </a> <br />
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/Abel-b/Allshop/">Github code</a>
+          </div>
+          <div class="col-md-4 project-preview-footer">
+            <i class="fa fa-github" aria-hidden="true"></i>
+            <a href="https://github.com/Abel-b/Ekub">Github Code</a>
+          </div>
         </div>
       </div>
     </div>
@@ -561,6 +586,8 @@
               "block";
             document.getElementById("project-allshop").style.display = "none";
             document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("preview-ekub").style.opacity = "0.3";
+            document.getElementById("preview-allshop").style.opacity = "0.3";
 
             break;
           case "all_shop":
@@ -568,6 +595,9 @@
             document.getElementById("project-habeshapizza").style.display =
               "none";
             document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("preview-ekub").style.opacity = "0.3";
+            document.getElementById("preview-habeshapizza").style.opacity =
+              "0.3";
 
             break;
           case "ekub":
@@ -575,29 +605,31 @@
             document.getElementById("project-habeshapizza").style.display =
               "none";
             document.getElementById("project-allshop").style.display = "none";
+            document.getElementById("preview-habeshapizza").style.opacity =
+              "0.3";
+            document.getElementById("preview-allshop").style.opacity = "0.3";
 
             break;
         }
       }
 
-      function hideProjectNameshowProjectName(type) {
+      function hideProjectName(type) {
         document.getElementById("project-habeshapizza").style.display = "none";
         document.getElementById("project-allshop").style.display = "none";
         document.getElementById("project-ekub").style.display = "none";
+        document.getElementById("preview-habeshapizza").style.opacity = "1";
+        document.getElementById("preview-allshop").style.opacity = "1";
+        document.getElementById("preview-ekub").style.opacity = "1";
 
         console.log(type);
-        // switch (type) {
-        //   case "habesha_pizza":
-        //     document.getElementById("project-habeshapizza").style.display =
-        //       "none";
-        //     break;
-        //   case "all_shop":
-        //     document.getElementById("project-allshop").style.display = "none";
-        //     break;
-        //   case "ekub":
-        //     document.getElementById("project-ekub").style.display = "none";
-        //     break;
-        // }
+        switch (type) {
+          case "habesha_pizza":
+            break;
+          case "all_shop":
+            break;
+          case "ekub":
+            break;
+        }
       }
       function toggleEdu0() {
         var x = document.getElementById("edu0");
