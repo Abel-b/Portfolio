@@ -1,4 +1,3 @@
-
 body {
   font-family: "Lato", sans-serif;
   font-size: 16px;
@@ -54,6 +53,18 @@ header {
   animation-iteration-count: 1;
   animation-timing-function: ease;
   animation-duration: 0.75s;
+}
+li {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.course-table {
+  border-color: #96d4d4;
+}
+td,
+th {
+  padding-right: 10px;
+  padding-left: 10px;
 }
 header ul {
   display: inline-block;
@@ -228,7 +239,8 @@ footer {
   text-align: center;
 }
 #lead-content h1,
-#lead-content h2 {
+#lead-content h2,
+h3 {
   margin: 0;
 }
 #lead-content h1 {
@@ -239,7 +251,8 @@ footer {
   letter-spacing: 0.05em;
   line-height: 0.9em;
 }
-#lead-content h2 {
+#lead-content h2,
+h3 {
   color: #a0cfee;
   font-weight: 500;
   font-size: 2.25em;
@@ -316,6 +329,13 @@ footer {
   position: relative;
   max-width: 1000px;
 }
+#hideEdu1,
+#hideEdu0,
+#edu1,
+#edu0 {
+  display: none;
+}
+
 #experience-timeline:before {
   position: absolute;
   content: "";
@@ -363,6 +383,11 @@ footer {
   color: #74808a;
   font-size: 0.9em;
   margin: 0;
+}
+.education1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .vtimeline-point {
   position: relative;
@@ -450,11 +475,24 @@ footer {
   max-width: 900px;
   margin: 0 auto 30px auto;
   overflow: hidden;
-  background: #fff;
-  border-radius: 4px;
+  background: rgba(236, 234, 243, 0.8);
+  border-radius: 10px;
 }
 .project-image {
   float: left;
+  box-shadow: 0px 4px 8px 0px #ffffff;
+}
+.project-preview-container {
+  margin-bottom: 25px;
+  display: flex;
+  width: "100%";
+  justify-content: space-between;
+}
+.project-preview {
+  background-color: #1d6fa5;
+  margin-left: 0px;
+  margin-right: 0px;
+  border-radius: 9px;
 }
 .project-info {
   position: absolute;
@@ -479,6 +517,11 @@ footer {
   margin: 0;
   padding: 30px 15px;
   transform: none;
+}
+#project-ekub,
+#project-habeshapizza,
+#project-allshop {
+  display: none;
 }
 #more-projects {
   display: none;

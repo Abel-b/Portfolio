@@ -1,282 +1,632 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>My Portfolio</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/styles.css" rel="stylesheet">
-</head>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div id="mobile-menu-open" class="shadow-large">
-        <i class="fa fa-bars" aria-hidden="true"></i>
+      <i class="fa fa-bars" aria-hidden="true"></i>
     </div>
     <!-- End #mobile-menu-toggle -->
     <header>
-        <div id="mobile-menu-close">
-            <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
-        </div>
-        <ul id="menu" class="shadow">
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#education">Education</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-        </ul>
+      <div id="mobile-menu-close">
+        <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+      </div>
+      <ul id="menu" class="shadow">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
     </header>
     <!-- End header -->
 
     <div id="lead">
-        <div id="lead-content">
-            <h1>Abel Berhane</h1>
-            <h2>Software Engineer | Android Developer</h2>
-        </div>
-        <!-- End #lead-content -->
+      <div id="lead-content">
+        <h1>Abel Berhane Woldemariam</h1>
+        <h3>Web / Mobile Developer</h3>
+      </div>
 
-        <div id="lead-overlay"></div>
+      <div id="lead-overlay"></div>
 
-        <div id="lead-down">
-            <span>
-                <i class="fa fa-chevron-down" aria-hidden="true"></i>
-            </span>
-        </div>
-        <!-- End #lead-down -->
+      <div id="lead-down">
+        <span>
+          <i class="fa fa-chevron-down" aria-hidden="true"></i>
+        </span>
+      </div>
+      <!-- End #lead-down -->
     </div>
     <!-- End #lead -->
 
     <div id="about">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <h2 class="heading">About Me</h2>
-                </div>
-                <div class="col-md-8">
-                    <p>
-                        Enthusiastic Android Developer eager to contribute to team success through hard work, attention to detail and excellent
-                        organizational skills. Analytical and detail-oriented who creates effective and creative solutions to business
-                        and technology demands
-                    </p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2 class="heading">About Me</h2>
+          </div>
+          <div class="col-md-8">
+            <p>
+              An enthusiastic Android Developer eager to contribute to team
+              success through hard work, attention to detail and excellent
+              organizational skills. An analytical and detail-oriented who
+              creates effective and creative solutions to business and
+              technology demands
+            </p>
+          </div>
         </div>
+      </div>
     </div>
     <!-- End #about -->
 
     <div id="education" class="background-alt">
-        <h2 class="heading">Education</h2>
-        <div id="experience-timeline">
-
-            <div data-date="Sept 2019 - Present">
-                <h3>Moringa School</h3>
-                <p>Nairobi, Kenya</p>
-                <h4>Assistant Finance officer</h4>
-                <ul>
-                    <li>
-                        Software Engineering, Android Specialization
-                    </li>
-                
-                </ul>
+      <h2 class="heading">Education</h2>
+      <div id="experience-timeline">
+        <div data-date="Aug 2020 - Present">
+          <h2>Jacobs University Bremen</h2>
+          <div class="education1">
+            <div>
+              <p>Country: Bremen, Germany</p>
+              <p>Major: <b>Computer Science</b> (CS)</p>
+              <p>Achievement: <b>BSc Degree</b></p>
             </div>
-
-            <div data-date="Sept 2015 - June 2019">
-                <h3>Saint Joseph School</h3>
-                <p>Addis Ababa, Ethiopia</p>
-                <h4>HighSchool Diploma</h4>
-                <ul>
-                    <li>
-                        Served as the HighSchool President.
-                    </li>
-                    <li>
-                        Served as IT Club Vice-President
-                    </li>
-                
-                </ul>
+            <div>
+              <button id="showEdu0" onclick="toggleEdu0();">
+                Show Courses List
+              </button>
+              <button id="hideEdu0" onclick="toggleEdu0();">
+                Hide Courses List
+              </button>
+              <div id="edu0">
+                <table border="1px solid black" class="course-table">
+                  <tr class="course-header">
+                    <th></th>
+                    <th>Courses</th>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Introduction to Computer Science</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Operating Systems</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Computer Networks</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Legal and Ethical Aspects of Computer Science</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Databases and Web Services</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Software Engineering</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Automata, Computability and Complexity</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Academic Skills in Computer Science</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Programming in C and C++</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Algorithms and Data Structures</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Introduction to Robotics and Intelligent Systems</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Calculus and Elements of Linear Algebra I</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Calculus and Elements of Linear Algebra II</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Probability and Random Processes</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>CS</p>
+                    </td>
+                    <td>
+                      <p>Numerical Methods</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Extra</p>
+                    </td>
+                    <td>
+                      <p>Macroeconomics - Theory and Policy</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Extra</p>
+                    </td>
+                    <td>
+                      <p>Introduction to Logistics & Supply Chain Management</p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>Extra</p>
+                    </td>
+                    <td>
+                      <p>Industrial Engineering</p>
+                    </td>
+                  </tr>
+                </table>
+              </div>
             </div>
+          </div>
         </div>
+
+        <div data-date="Sept 2019 - Feb 2020">
+          <h2>Moringa School</h2>
+          <div class="education1">
+            <div>
+              <p>Country: Nairobi, Kenya</p>
+              <p>Focus: <b>Software Development</b> (SD)</p>
+              <p>Achievement: <b>Certificate of Excellence</b></p>
+            </div>
+            <div>
+              <button id="showEdu1" onclick="toggleEdu1()">
+                Show Courses List
+              </button>
+              <button id="hideEdu1" onclick="toggleEdu1()">
+                Hide Courses List
+              </button>
+              <table border="1px solid black" class="course-table" id="edu1">
+                <tr class="course-header">
+                  <th></th>
+                  <th>Courses</th>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SD</p>
+                  </td>
+                  <td>
+                    <p>Front-End Development</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SD</p>
+                  </td>
+                  <td>
+                    <p>Front-End Web Applications</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SD</p>
+                  </td>
+                  <td>
+                    <p>Back-End Development</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p>SD</p>
+                  </td>
+                  <td>
+                    <p>Back-End Web APIs</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+
+        <div data-date="Sept 2015 - June 2019">
+          <h2>Saint Joseph School</h2>
+          <p>Country: Addis Ababa, Ethiopia</p>
+          <p>Focus: <b>HighSchool</b></p>
+          <p>Achievement: <b>HighSchool Diploma</b></p>
+          <ul>
+            <li>Served as the HighSchool President.</li>
+            <li>Served as IT Club Vice-President</li>
+          </ul>
+        </div>
+      </div>
     </div>
     <!-- End #experience -->
 
-    
     <div id="projects" class="background-alt">
-        <h2 class="heading">Projects</h2>
-        <div class="container">
-            <div class="row">
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/Habesha.png" width="300" height="250" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Habesha Pizza</h3>
-                        <p>
-                            This is a website designed for Habesha Pizza for online order and delivery.
-                        </p>
-                        <p>Languages Used:</p>
-                        <ul>
-                            <li>
-                                HTML
-                            </li>
-                            <li>
-                                CSS
-                            </li>
-                            <li>
-                                JavaScript
-                            </li>
-                        
-                        </ul>
-                        <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a> <br />
-                        <a href="https://github.com/Abel-b/Habesha-Pizza/">Github code</a>
-                        
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/allShop.png" width="300" height="300"/>
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>AllShop</h3>
-                        <p>
-                            An online shop that helps buyers make informed shopping decisions on items by comparing the prices of a product sold by various vendors and getting the items delivered to them conveniently.                      
-                        </p>
-                        <p>Languages Used:</p>
-                        <ul>
-                            <li>
-                                HTML
-                            </li>
-                            <li>
-                                CSS
-                            </li>
-                            <li>
-                                JavaScript
-                            </li>
-                        
-                        </ul>
-                        <a href="https://abel-b.github.io/Allshop/">Live link</a> <br />
-                        <a href="https://github.com/Abel-b/Allshop/">Github code</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-
-                <div class="project shadow-large">
-                    <div class="project-image">
-                        <img src="images/project.jpg" />
-                    </div>
-                    <!-- End .project-image -->
-                    <div class="project-info">
-                        <h3>Ekub</h3>
-                        <p>
-                            Modern bank and 100% granted lottery system                        </p>
-                        <p>Technologies Used:</p>
-                        <ul>
-                            <li>
-                                Spark
-                            </li>
-                            <li>
-                                CSS
-                            </li>
-                            <li>
-                                PSQL
-                            </li>
-                            <li>
-                                Java
-                            </li> 
-                        
-                        </ul>
-                        <a href="https://github.com/Abel-b/Ekub">Github Code</a>
-                    </div>
-                    <!-- End .project-info -->
-                </div>
-                <!-- End .project -->
-            </div>
+      <h2 class="heading">Projects</h2>
+      <div class="container">
+        <div class="row project-preview-container">
+          <div
+            class="col-4 project-preview"
+            onmouseover="showProjectName('habesha_pizza')"
+            onmouseout="hideProjectName('habesha_pizza')"
+          >
+            <h3>Habesha Pizza</h3>
+            <img src="images/Habesha.png" width="100" height="100" />
+          </div>
+          <div
+            class="col-md-4 project-preview"
+            onmouseover="showProjectName('all_shop')"
+            onmouseout="hideProjectName('all_shop')"
+          >
+            <h3>AllShop</h3>
+            <img src="images/allShop.png" width="100" height="100" />
+          </div>
+          <div
+            class="col-4 project-preview"
+            onmouseover="showProjectName('ekub')"
+            onmouseout="hideProjectName('ekub')"
+          >
+            <h3>Ekub</h3>
+            <img src="images/project.jpg" width="100" height="100" />
+          </div>
         </div>
+        <div class="row">
+          <div class="project shadow-large" id="project-habeshapizza">
+            <div class="project-image">
+              <img src="images/Habesha.png" width="300" height="300" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info" id="habesha_pizza_text">
+              <h3>Habesha Pizza</h3>
+              <p>
+                This is a website designed for Habesha Pizza for online order
+                and delivery.
+              </p>
+              <p>Languages Used:</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a>
+              <br />
+              <a href="https://github.com/Abel-b/Habesha-Pizza/">Github code</a>
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+
+          <div class="project shadow-large" id="project-allshop">
+            <div class="project-image">
+              <img src="images/allShop.png" width="300" height="300" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info" id="all_shop_text">
+              <h3>AllShop</h3>
+              <p>
+                An online shop that helps buyers make informed shopping
+                decisions on items by comparing the prices of a product sold by
+                various vendors and getting the items delivered to them
+                conveniently.
+              </p>
+              <p>Languages Used:</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <a href="https://abel-b.github.io/Allshop/">Live link</a> <br />
+              <a href="https://github.com/Abel-b/Allshop/">Github code</a>
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+
+          <div class="project shadow-large" id="project-ekub">
+            <div class="project-image">
+              <img src="images/project.jpg" width="300" height="300" />
+            </div>
+            <!-- End .project-image -->
+            <div class="project-info" id="ekub_text">
+              <h3>Ekub</h3>
+              <p>Modern bank and 100% granted lottery system</p>
+              <p>Technologies Used:</p>
+              <ul>
+                <li>Spark</li>
+                <li>CSS</li>
+                <li>PSQL</li>
+                <li>Java</li>
+              </ul>
+              <a href="https://github.com/Abel-b/Ekub">Github Code</a>
+            </div>
+            <!-- End .project-info -->
+          </div>
+          <!-- End .project -->
+        </div>
+      </div>
     </div>
     <!-- End #projects -->
 
     <div id="skills">
-        <h2 class="heading">Skills</h2>
+      <h2 class="heading">Programming Skills | Technologies Used</h2>
 
-        <ul>
-            <li>JavaScript</li>
-            <li>Java</li>
-            <li>CSS</li>
-           <li>Android</li>
-           <li>HTML</li>
-           <li>PSQL</li>
-           <li>Android</li>
-            <li>Node.js</li>
-            <li>AngularJs</li>
-            <li>Kotlin</li>
-
-        </ul>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Java</li>
+        <li>Spark</li>
+        <li>Android Studio</li>
+        <li>React Native</li>
+        <li>C</li>
+        <li>C++</li>
+        <li>Haskell</li>
+        <li>SQL</li>
+        <li>PSQL</li>
+        <li>MySQL</li>
+        <li>Android</li>
+        <li>Node.JS</li>
+        <li>React.JS</li>
+        <li>Angular.JS</li>
+        <li>Bootstrap</li>
+      </ul>
     </div>
     <!-- End #skills -->
 
     <div id="contact">
-        <h2>Get in Touch</h2>
-        <div id="contact-form">
-            <form method="POST" action="https://formspree.io/mjvwpggl">
-                <input type="hidden" name="_subject" value="Contact request from personal website" />
-                <input type="email" name="_replyto" placeholder="Your email" required>
-                <textarea name="message" placeholder="Your message" required></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        <!-- End #contact-form -->
+      <h2>Get in Touch</h2>
+      <div id="contact-form">
+        <form method="POST" action="https://formspree.io/mjvwpggl">
+          <input
+            type="hidden"
+            name="_subject"
+            value="Contact request from personal website"
+          />
+          <input
+            type="email"
+            name="_replyto"
+            placeholder="Your email"
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your message"
+            required
+          ></textarea>
+          <button type="submit">Send</button>
+        </form>
+      </div>
+      <!-- End #contact-form -->
     </div>
     <!-- End #contact -->
 
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-5 copyright">
-                    <p>
-                        Copyright &copy; 2020 Abel B.
-                    </p>
-                </div>
-                <div class="col-sm-2 top">
-                    <span id="to-top">
-                        <i class="fa fa-chevron-up" aria-hidden="true"></i>
-                    </span>
-                </div>
-                <div class="col-sm-5 social">
-                    <ul>
-                        <li>
-                            <a href="https://github.com/Abel-b" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/abel-w-berhane" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-                        </li>
-                        </ul>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-5 copyright">
+            <p>&copy; 2023 Abel BWM.</p>
+          </div>
+          <div class="col-sm-2 top">
+            <span id="to-top">
+              <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="col-sm-5 social">
+            <ul>
+              <li>
+                <a href="https://github.com/Abel-b" target="_blank"
+                  ><i class="fa fa-github" aria-hidden="true"></i
+                ></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/abel-w-berhane"
+                  target="_blank"
+                  ><i class="fa fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </footer>
     <!-- End footer -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/scripts.min.js"></script>
-</body>
+    <script>
+      function showProject(type) {
+        console.log(type);
+        switch (type) {
+          case "habesha_pizza":
+            document.getElementById("habesha_pizza_text").style.display =
+              "block";
+            break;
+          case "all_shop":
+            document.getElementById("all_shop_text").style.display = "block";
+            break;
+          case "ekub":
+            document.getElementById("ekub_text").style.display = "block";
+            break;
+        }
+      }
 
+      function hideProject(type) {
+        console.log(type);
+        switch (type) {
+          case "habesha_pizza":
+            document.getElementById("habesha_pizza_text").style.display =
+              "none";
+            break;
+          case "all_shop":
+            document.getElementById("all_shop_text").style.display = "none";
+            break;
+          case "ekub":
+            document.getElementById("ekub_text").style.display = "none";
+            break;
+        }
+      }
+
+      function showProjectName(type) {
+        console.log(type);
+        switch (type) {
+          case "habesha_pizza":
+            document.getElementById("project-habeshapizza").style.display =
+              "block";
+            document.getElementById("project-allshop").style.display = "none";
+            document.getElementById("project-ekub").style.display = "none";
+
+            break;
+          case "all_shop":
+            document.getElementById("project-allshop").style.display = "block";
+            document.getElementById("project-habeshapizza").style.display =
+              "none";
+            document.getElementById("project-ekub").style.display = "none";
+
+            break;
+          case "ekub":
+            document.getElementById("project-ekub").style.display = "block";
+            document.getElementById("project-habeshapizza").style.display =
+              "none";
+            document.getElementById("project-allshop").style.display = "none";
+
+            break;
+        }
+      }
+
+      function hideProjectNameshowProjectName(type) {
+        document.getElementById("project-habeshapizza").style.display = "none";
+        document.getElementById("project-allshop").style.display = "none";
+        document.getElementById("project-ekub").style.display = "none";
+
+        console.log(type);
+        // switch (type) {
+        //   case "habesha_pizza":
+        //     document.getElementById("project-habeshapizza").style.display =
+        //       "none";
+        //     break;
+        //   case "all_shop":
+        //     document.getElementById("project-allshop").style.display = "none";
+        //     break;
+        //   case "ekub":
+        //     document.getElementById("project-ekub").style.display = "none";
+        //     break;
+        // }
+      }
+      function toggleEdu0() {
+        var x = document.getElementById("edu0");
+        var x_hide_button = document.getElementById("hideEdu0");
+        var x_show_button = document.getElementById("showEdu0");
+        if (x.style.display !== "block") {
+          x.style.display = "block";
+          x_show_button.style.display = "none";
+          x_hide_button.style.display = "block";
+        } else {
+          x.style.display = "none";
+          x_show_button.style.display = "block";
+          x_hide_button.style.display = "none";
+        }
+      }
+      function toggleEdu1() {
+        var x = document.getElementById("edu1");
+        var x_hide_button = document.getElementById("hideEdu1");
+        var x_show_button = document.getElementById("showEdu1");
+        if (x.style.display !== "block") {
+          x.style.display = "block";
+          x_show_button.style.display = "none";
+          x_hide_button.style.display = "block";
+        } else {
+          x.style.display = "none";
+          x_show_button.style.display = "block";
+          x_hide_button.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
