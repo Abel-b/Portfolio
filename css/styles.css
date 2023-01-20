@@ -498,6 +498,62 @@ h3 {
   margin-right: 0px;
   justify-content: space-between;
 }
+
+#work-experience {
+  background-color: #f2f2f5;
+  padding: 30px;
+}
+
+.experience {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.center-text {
+  text-align: center;
+}
+.work-duration {
+  display: flex;
+  align-items: center;
+}
+
+.experience-icon {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.experience-icon i {
+  color: white;
+  font-size: 22px;
+}
+.work-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #f2f2f2;
+  box-shadow: 0px 0px 10px #ccc;
+}
+
+.experience-info {
+  flex: 1;
+}
+
+.experience-info h3 {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.experience-title {
+  display: inline;
+}
+
 .project-preview-title {
   background-color: rgba(61, 33, 187, 0.8);
   margin-left: 0px;
