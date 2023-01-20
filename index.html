@@ -33,6 +33,9 @@
           <a href="#education">Education</a>
         </li>
         <li>
+          <a href="#work-experience">Work</a>
+        </li>
+        <li>
           <a href="#projects">Projects</a>
         </li>
         <li>
@@ -50,6 +53,10 @@
         <h1>Abel Berhane Woldemariam</h1>
         <h3></h3>
         <h3>Software Developer</h3>
+        <button onclick="downloadCV('./assets/AbelResume.pdf')">
+          <i class="fa fa-download" aria-hidden="true"></i>
+          Resume PDF
+        </button>
       </div>
 
       <div id="lead-overlay"></div>
@@ -421,6 +428,7 @@
                   <i class="fa fa-calendar" aria-hidden="true"></i>
                   <h6>May 2022 - Sept 2022</h6>
                 </div>
+
                 <ul>
                   <li>
                     Learning and understanding the React Native infrastructure
@@ -446,15 +454,21 @@
                     Integrating external APIs to enhance functionality of the
                     app.
                   </li>
-                  <p>
-                    These were my tasks that were done at Raevoluz during my
-                    employment, they are related to the development and
-                    maintenance of a mobile application, including working with
-                    React Native, upgrading an old project, implementing UI
-                    elements, working on a web service and integrating external
-                    APIs.
-                  </p>
                 </ul>
+                <p>
+                  These were my tasks that were done at Raevoluz during my
+                  employment, they are related to the development and
+                  maintenance of a mobile application, including working with
+                  React Native, upgrading an old project, implementing UI
+                  elements, working on a web service and integrating external
+                  APIs.
+                </p>
+                <button
+                  onclick="downloadReferrenceLetter('./assets/Raevoluz.pdf')"
+                >
+                  <i class="fa fa-download" aria-hidden="true"></i>
+                  Referrence Letter
+                </button>
               </div>
             </div>
           </div>
@@ -795,6 +809,19 @@
           x_show_button.style.display = "block";
           x_hide_button.style.display = "none";
         }
+      }
+
+      function downloadReferrenceLetter(url) {
+        var link = document.createElement("a");
+        link.download = "cv.pdf";
+        link.href = url;
+        link.click();
+      }
+      function downloadCV(url) {
+        var link = document.createElement("a");
+        link.download = "cv.pdf";
+        link.href = url;
+        link.click();
       }
     </script>
   </body>
