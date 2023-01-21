@@ -526,7 +526,6 @@
               <i class="fa fa-github" aria-hidden="true"></i>
               <a href="https://github.com/Abel-b/Allshop/">Github code</a>
             </div>
-           
           </div>
           <div
             class="project-preview"
@@ -546,7 +545,6 @@
             <div class="project-image">
               <img src="images/Habesha.png" width="300" height="300" />
             </div>
-            <!-- End .project-image -->
             <div class="project-info" id="habesha_pizza_text">
               <h3>Habesha Pizza</h3>
               <p>
@@ -560,15 +558,12 @@
                 <li>JavaScript</li>
               </ul>
             </div>
-            <!-- End .project-info -->
           </div>
-          <!-- End .project -->
 
           <div class="project shadow-large" id="project-allshop">
             <div class="project-image">
               <img src="images/allShop.png" width="300" height="300" />
             </div>
-            <!-- End .project-image -->
             <div class="project-info" id="all_shop_text">
               <h3>AllShop</h3>
               <p>
@@ -584,15 +579,12 @@
                 <li>JavaScript</li>
               </ul>
             </div>
-            <!-- End .project-info -->
           </div>
-          <!-- End .project -->
 
           <div class="project shadow-large" id="project-ekub">
             <div class="project-image">
               <img src="images/project.jpg" width="300" height="300" />
             </div>
-            <!-- End .project-image -->
             <div class="project-info" id="ekub_text">
               <h3>Ekub</h3>
               <p>Modern bank and 100% granted lottery system</p>
@@ -604,12 +596,7 @@
                 <li>Java</li>
               </ul>
             </div>
-            <!-- End .project-info -->
           </div>
-          <!-- End .project -->
-        </div>
-        <div class="project-title-footer">
-         
         </div>
       </div>
     </div>
@@ -645,7 +632,7 @@
     <!-- End #skills -->
 
     <div id="contact">
-      <h2>Get in Touch</h2>
+      <h2>Write me a message</h2>
       <div id="contact-form">
         <form method="POST" action="https://formspree.io/mjvwpggl">
           <input
@@ -656,12 +643,12 @@
           <input
             type="email"
             name="_replyto"
-            placeholder="Your email"
+            placeholder="Your email address"
             required
           />
           <textarea
             name="message"
-            placeholder="Your message"
+            placeholder="Message goes here..."
             required
           ></textarea>
           <button type="submit">Send</button>
@@ -781,17 +768,19 @@
         console.log(type);
         switch (type) {
           case "habesha_pizza":
-          document.getElementById("project-allshop").style.display = "none";
-        document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("project-allshop").style.display = "none";
+            document.getElementById("project-ekub").style.display = "none";
             break;
           case "all_shop":
-          document.getElementById("project-habeshapizza").style.display = "none";
-        document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("project-habeshapizza").style.display =
+              "none";
+            document.getElementById("project-ekub").style.display = "none";
 
             break;
           case "ekub":
-          document.getElementById("project-habeshapizza").style.display = "none";
-        document.getElementById("project-allshop").style.display = "none";
+            document.getElementById("project-habeshapizza").style.display =
+              "none";
+            document.getElementById("project-allshop").style.display = "none";
             break;
         }
       }

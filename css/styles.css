@@ -426,8 +426,8 @@ h3 {
   text-align: center;
 }
 #education h2 {
-  color: #374054;
-  margin-bottom: 50px;
+  color: #374054; 
+  margin-bottom: 5px;
 }
 .education-block {
   max-width: 700px;
@@ -677,8 +677,6 @@ h3 {
   resize: none;
 }
 #contact-form button {
-  display: block;
-  width: 100%;
   background: #fff;
   border-radius: 4px;
   padding: 5px 10px;
