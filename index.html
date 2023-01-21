@@ -273,6 +273,10 @@
               <p>Country: Nairobi, Kenya</p>
               <p>Focus: <b>Software Development</b> (SD)</p>
               <p>Achievement: <b>Certificate of Excellence</b></p>
+              <button onclick="downloadCV('./assets/Abel_resume.pdf')">
+                <i class="fa fa-download" aria-hidden="true"></i>
+                Certificates PDF
+              </button>
             </div>
             <div>
               <button id="showEdu1" onclick="toggleEdu1()">
@@ -281,6 +285,7 @@
               <button id="hideEdu1" onclick="toggleEdu1()">
                 Hide Courses List
               </button>
+
               <table border="1px solid black" class="course-table" id="edu1">
                 <tr class="course-header">
                   <th></th>
@@ -433,9 +438,8 @@
 
                 <ul>
                   <li>
-                    Learned and understood the React Native infrastructure
-                    of the app and set up a project environment for React
-                    Native
+                    Learned and understood the React Native infrastructure of
+                    the app and set up a project environment for React Native
                   </li>
                   <li>
                     Upgraded a more than two-year-old React Native project to
@@ -482,40 +486,59 @@
       <h2 class="heading">Projects</h2>
       <div class="container">
         <div class="row project-title-container">
-          <div class="col-md-4 project-preview-title">
+          <div class="col-md-5 project-preview-title">
             <h4>Habesha Pizza</h4>
           </div>
-          <div class="col-md-4 project-preview-title">
+          <div class="col-md-3 project-preview-title">
             <h4>AllShop</h4>
           </div>
           <div class="col-md-4 project-preview-title">
             <h4>Ekub</h4>
           </div>
         </div>
-        <div class="row project-preview-container">
+        <div class="project-preview-container">
           <div
-            class="col-4 project-preview"
+            class="project-preview"
             id="preview-habeshapizza"
             onmouseover="showProjectName('habesha_pizza')"
             onmouseout="hideProjectName('habesha_pizza')"
           >
-            <img src="images/Habesha.png" width="250" height="150" />
+            <img src="images/Habesha.png" width="65%" height="150" />
+            <div class="project-preview-footer">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a>
+              <br />
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/Abel-b/Habesha-Pizza/">Github code</a>
+            </div>
           </div>
+
           <div
-            class="col-4 project-preview"
+            class="project-preview"
             id="preview-allshop"
             onmouseover="showProjectName('all_shop')"
             onmouseout="hideProjectName('all_shop')"
           >
-            <img src="images/allShop.png" width="250" height="150" />
+            <img src="images/allShop.png" width="70%" height="150" />
+            <div class="project-preview-footer">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <a href="https://abel-b.github.io/Allshop/">Live link </a> <br />
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/Abel-b/Allshop/">Github code</a>
+            </div>
+           
           </div>
           <div
-            class="col-4 project-preview"
+            class="project-preview"
             id="preview-ekub"
             onmouseover="showProjectName('ekub')"
             onmouseout="hideProjectName('ekub')"
           >
-            <img src="images/project.jpg" width="250" height="150" />
+            <img src="images/project.jpg" width="110%" height="150" />
+            <div class="project-preview-footer">
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/Abel-b/Ekub">Github Code</a>
+            </div>
           </div>
         </div>
         <div class="row">
@@ -585,24 +608,8 @@
           </div>
           <!-- End .project -->
         </div>
-        <div class="row project-title-footer">
-          <div class="col-md-4 project-preview-footer">
-            <i class="fa fa-desktop" aria-hidden="true"></i>
-            <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a>
-            <br />
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a href="https://github.com/Abel-b/Habesha-Pizza/">Github code</a>
-          </div>
-          <div class="col-md-4 project-preview-footer">
-            <i class="fa fa-desktop" aria-hidden="true"></i>
-            <a href="https://abel-b.github.io/Allshop/">Live link </a> <br />
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a href="https://github.com/Abel-b/Allshop/">Github code</a>
-          </div>
-          <div class="col-md-4 project-preview-footer">
-            <i class="fa fa-github" aria-hidden="true"></i>
-            <a href="https://github.com/Abel-b/Ekub">Github Code</a>
-          </div>
+        <div class="project-title-footer">
+         
         </div>
       </div>
     </div>
@@ -767,9 +774,6 @@
       }
 
       function hideProjectName(type) {
-        document.getElementById("project-habeshapizza").style.display = "none";
-        document.getElementById("project-allshop").style.display = "none";
-        document.getElementById("project-ekub").style.display = "none";
         document.getElementById("preview-habeshapizza").style.opacity = "1";
         document.getElementById("preview-allshop").style.opacity = "1";
         document.getElementById("preview-ekub").style.opacity = "1";
@@ -777,10 +781,17 @@
         console.log(type);
         switch (type) {
           case "habesha_pizza":
+          document.getElementById("project-allshop").style.display = "none";
+        document.getElementById("project-ekub").style.display = "none";
             break;
           case "all_shop":
+          document.getElementById("project-habeshapizza").style.display = "none";
+        document.getElementById("project-ekub").style.display = "none";
+
             break;
           case "ekub":
+          document.getElementById("project-habeshapizza").style.display = "none";
+        document.getElementById("project-allshop").style.display = "none";
             break;
         }
       }
