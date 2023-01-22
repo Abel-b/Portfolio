@@ -486,13 +486,16 @@
       <h2 class="heading">Projects</h2>
       <div class="container">
         <div class="row project-title-container">
-          <div class="col-md-5 project-preview-title">
+          <div class="col-md-4 project-preview-title">
             <h4>Habesha Pizza</h4>
           </div>
           <div class="col-md-3 project-preview-title">
             <h4>AllShop</h4>
           </div>
-          <div class="col-md-4 project-preview-title">
+          <div class="col-md-3 project-preview-title">
+            <h4>Arada Cinema</h4>
+          </div>
+          <div class="col-md-2 project-preview-title">
             <h4>Ekub</h4>
           </div>
         </div>
@@ -503,7 +506,7 @@
             onmouseover="showProjectName('habesha_pizza')"
             onmouseout="hideProjectName('habesha_pizza')"
           >
-            <img src="images/Habesha.png" width="65%" height="150" />
+            <img src="images/Habesha.png" width="90%" height="150" />
             <div class="project-preview-footer">
               <i class="fa fa-desktop" aria-hidden="true"></i>
               <a href="https://abel-b.github.io/Habesha-Pizza/">Live link</a>
@@ -519,7 +522,7 @@
             onmouseover="showProjectName('all_shop')"
             onmouseout="hideProjectName('all_shop')"
           >
-            <img src="images/allShop.png" width="70%" height="150" />
+            <img src="images/allShop.png" width="90%" height="150" />
             <div class="project-preview-footer">
               <i class="fa fa-desktop" aria-hidden="true"></i>
               <a href="https://abel-b.github.io/Allshop/">Live link </a> <br />
@@ -529,11 +532,26 @@
           </div>
           <div
             class="project-preview"
+            id="preview-aradacinema"
+            onmouseover="showProjectName('arada_cinema')"
+            onmouseout="hideProjectName('arada_cinema')"
+          >
+            <img src="images/aradaCinema.png" width="90%" height="150" />
+            <div class="project-preview-footer">
+              <i class="fa fa-desktop" aria-hidden="true"></i>
+              <a href="https://abel-b.github.io/Arada-Cinema/">Live link </a>
+              <br />
+              <i class="fa fa-github" aria-hidden="true"></i>
+              <a href="https://github.com/Abel-b/Arada-Cinema">Github Code</a>
+            </div>
+          </div>
+          <div
+            class="project-preview"
             id="preview-ekub"
             onmouseover="showProjectName('ekub')"
             onmouseout="hideProjectName('ekub')"
           >
-            <img src="images/project.jpg" width="110%" height="150" />
+            <img src="images/project.jpg" width="100%" height="150" />
             <div class="project-preview-footer">
               <i class="fa fa-github" aria-hidden="true"></i>
               <a href="https://github.com/Abel-b/Ekub">Github Code</a>
@@ -548,8 +566,9 @@
             <div class="project-info" id="habesha_pizza_text">
               <h3>Habesha Pizza</h3>
               <p>
-                This is a website designed for Habesha Pizza for online order
-                and delivery.
+                Welcome to Habesha Pizza's online ordering and delivery website.
+                Place your order now and enjoy the taste of Habesha Pizza from
+                the comfort of your own home.
               </p>
               <p>Languages Used:</p>
               <ul>
@@ -581,13 +600,42 @@
             </div>
           </div>
 
+          <div class="project shadow-large" id="project-aradacinema">
+            <div class="project-image">
+              <img src="images/aradaCinema.png" width="300" height="300" />
+            </div>
+            <div class="project-info" id="arada_cinema_text">
+              <h3>Arada Cinema</h3>
+              <p>
+                Welcome to the front-end website for Arada Cinema. Here you can
+                easily browse showtimes and book your tickets in advance. No
+                more waiting in long lines at the box office. Make your
+                movie-going experience even better by booking your tickets
+                online today!
+              </p>
+              <p>Languages Used:</p>
+              <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="project shadow-large" id="project-ekub">
             <div class="project-image">
               <img src="images/project.jpg" width="300" height="300" />
             </div>
             <div class="project-info" id="ekub_text">
               <h3>Ekub</h3>
-              <p>Modern bank and 100% granted lottery system</p>
+              <p>
+                Welcome to Modern Eukb Bank's website. Here, you will find a
+                100% guaranteed lottery system. No more waiting for a
+                lucky number or drawing, with our system, every ticket is a
+                winner. Our lottery system is a great way to potentially win big
+                while supporting our bank. So don't wait, visit our website and
+                purchase your lottery ticket today!
+              </p>
               <p>Technologies Used:</p>
               <ul>
                 <li>Spark</li>
@@ -733,16 +781,37 @@
               "block";
             document.getElementById("project-allshop").style.display = "none";
             document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("project-aradacinema").style.display =
+              "none";
             document.getElementById("preview-ekub").style.opacity = "0.3";
             document.getElementById("preview-allshop").style.opacity = "0.3";
+            document.getElementById("preview-aradacinema").style.opacity =
+              "0.3";
 
             break;
           case "all_shop":
             document.getElementById("project-allshop").style.display = "block";
             document.getElementById("project-habeshapizza").style.display =
               "none";
+            document.getElementById("project-aradacinema").style.display =
+              "none";
             document.getElementById("project-ekub").style.display = "none";
             document.getElementById("preview-ekub").style.opacity = "0.3";
+            document.getElementById("preview-habeshapizza").style.opacity =
+              "0.3";
+            document.getElementById("preview-aradacinema").style.opacity =
+              "0.3";
+
+            break;
+          case "arada_cinema":
+            document.getElementById("project-aradacinema").style.display =
+              "block";
+            document.getElementById("project-habeshapizza").style.display =
+              "none";
+            document.getElementById("project-allshop").style.display = "none";
+            document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("preview-ekub").style.opacity = "0.3";
+            document.getElementById("preview-allshop").style.opacity = "0.3";
             document.getElementById("preview-habeshapizza").style.opacity =
               "0.3";
 
@@ -751,10 +820,14 @@
             document.getElementById("project-ekub").style.display = "block";
             document.getElementById("project-habeshapizza").style.display =
               "none";
+            document.getElementById("project-aradacinema").style.display =
+              "none";
             document.getElementById("project-allshop").style.display = "none";
             document.getElementById("preview-habeshapizza").style.opacity =
               "0.3";
             document.getElementById("preview-allshop").style.opacity = "0.3";
+            document.getElementById("preview-aradacinema").style.opacity =
+              "0.3";
 
             break;
         }
@@ -764,14 +837,25 @@
         document.getElementById("preview-habeshapizza").style.opacity = "1";
         document.getElementById("preview-allshop").style.opacity = "1";
         document.getElementById("preview-ekub").style.opacity = "1";
+        document.getElementById("preview-aradacinema").style.opacity = "1";
 
         console.log(type);
         switch (type) {
           case "habesha_pizza":
             document.getElementById("project-allshop").style.display = "none";
             document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("project-aradacinema").style.display =
+              "none";
             break;
           case "all_shop":
+            document.getElementById("project-habeshapizza").style.display =
+              "none";
+            document.getElementById("project-ekub").style.display = "none";
+            document.getElementById("project-aradacinema").style.display =
+              "none";
+
+            break;
+          case "arada_cinema":
             document.getElementById("project-habeshapizza").style.display =
               "none";
             document.getElementById("project-ekub").style.display = "none";
@@ -780,6 +864,9 @@
           case "ekub":
             document.getElementById("project-habeshapizza").style.display =
               "none";
+            document.getElementById("project-aradacinema").style.display =
+              "none";
+
             document.getElementById("project-allshop").style.display = "none";
             break;
         }
